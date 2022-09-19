@@ -38,7 +38,7 @@ const Header = () => {
           <IconButton>
             <Icon id="search" color={COLORS.gray[900]} />
           </IconButton>
-          <IconButton>
+          <IconButton onClick={() => setShowMobileMenu(true)}>
             <Icon id="menu" color={COLORS.gray[900]} />
           </IconButton>
         </IconButtonWrapper>
