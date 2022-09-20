@@ -3,8 +3,6 @@ import React from "react";
 import styled from "styled-components/macro";
 import { DialogOverlay, DialogContent } from "@reach/dialog";
 
-import { COLORS } from "../../constants";
-
 import UnstyledButton from "../UnstyledButton";
 import Icon from "../Icon";
 import VisuallyHidden from "../VisuallyHidden";
@@ -53,7 +51,7 @@ const Overlay = styled(DialogOverlay)`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: hsla(220, 5%, 40%, 0.8);
+    background-color: hsla(var(--color-gray-700), var(--modal-opacity));
   }
 `;
 
@@ -63,7 +61,7 @@ const Content = styled(DialogContent)`
   right: 0;
   bottom: 0;
   width: 300px;
-  background-color: ${COLORS.white};
+  background-color: hsl(var(--color-white));
   padding: 26px 16px 32px 32px;
   display: flex;
   flex-direction: column;
@@ -83,9 +81,9 @@ const Nav = styled.nav`
 const NavLink = styled.a`
   text-decoration: none;
   color: ${props =>
-    props.active ? `${COLORS.secondary}` : `${COLORS.gray[900]}`};
+    props.active ? `hsl(var(--color-secondary))` : `hsl(var(--color-gray-900))`};
   font-size: calc(18 / 16 * 1rem);
-  font-weight: 600;
+  var(--font-weight-medium);
 `;
 
 const Footer = styled.footer`
@@ -96,7 +94,7 @@ const Footer = styled.footer`
 
 const FooterLink = styled.a`
   text-decoration: none;
-  color: ${COLORS.gray[700]};
+  color: hsl(var(--color-gray-700));
   font-size: calc(14 / 16 * 1rem);
-  font-weight: 500;
+  var(--font-weight-normal);
 `;

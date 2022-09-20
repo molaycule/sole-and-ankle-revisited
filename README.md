@@ -111,7 +111,7 @@ This works fine, but I personally prefer to use CSS variables for colors. It mak
 
 ```jsx
 const Something = styled.p`
-  color: var(--color-gray-900);
+  color: hsl(var(--color-gray-900));
 `;
 ```
 

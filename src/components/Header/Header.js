@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 
-import { COLORS, WEIGHTS } from "../../constants";
+import { COLORS } from "../../constants";
 import Logo from "../Logo";
 import SuperHeader from "../SuperHeader";
 import MobileMenu from "../MobileMenu";
@@ -63,7 +63,7 @@ const MainHeader = styled.div`
   align-items: baseline;
   padding: 18px 32px;
   height: 72px;
-  border-bottom: 1px solid ${COLORS.gray[300]};
+  border-bottom: 1px solid hsl(var(--color-gray-300));
   overflow: auto hidden;
 
   @media ${props => props.theme.queries.tabletMax} {
@@ -95,11 +95,11 @@ const NavLink = styled.a`
   font-size: 1.125rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: ${COLORS.gray[900]};
-  font-weight: ${WEIGHTS.medium};
+  color: hsl(var(--color-gray-900));
+  font-weight: var(--font-weight-medium);
 
   &:first-of-type {
-    color: ${COLORS.secondary};
+    color: hsl(var(--color-secondary));
   }
 `;
 
