@@ -51,7 +51,7 @@ const Overlay = styled(DialogOverlay)`
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: hsla(var(--color-gray-700), var(--modal-opacity));
+    background-color: hsl(var(--color-gray-700) / var(--modal-opacity));
   }
 `;
 
@@ -75,7 +75,7 @@ const CloseButton = styled(UnstyledButton)`
 const Nav = styled.nav`
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 16px;
 `;
 
 const NavLink = styled.a`
@@ -83,7 +83,8 @@ const NavLink = styled.a`
   color: ${props =>
     props.active ? `hsl(var(--color-secondary))` : `hsl(var(--color-gray-900))`};
   font-size: calc(18 / 16 * 1rem);
-  var(--font-weight-medium);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
 `;
 
 const Footer = styled.footer`
@@ -96,5 +97,5 @@ const FooterLink = styled.a`
   text-decoration: none;
   color: hsl(var(--color-gray-700));
   font-size: calc(14 / 16 * 1rem);
-  var(--font-weight-normal);
+  font-weight: var(--font-weight-normal);
 `;
