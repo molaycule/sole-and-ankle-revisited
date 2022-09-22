@@ -6,6 +6,7 @@ import Logo from "../Logo";
 import SuperHeader from "../SuperHeader";
 import MobileMenu from "../MobileMenu";
 import Icon from "../Icon";
+import VisuallyHidden from "../VisuallyHidden";
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = React.useState(false);
@@ -40,12 +41,15 @@ const Header = () => {
         <IconButtonWrapper>
           <IconButton>
             <Icon id="shopping-bag" color={COLORS.gray[900]} />
+            <VisuallyHidden>Shopping Bag</VisuallyHidden>
           </IconButton>
           <IconButton>
             <Icon id="search" color={COLORS.gray[900]} />
+            <VisuallyHidden>Search</VisuallyHidden>
           </IconButton>
           <IconButton onClick={() => setShowMobileMenu(true)}>
             <Icon id="menu" color={COLORS.gray[900]} />
+            <VisuallyHidden>Menu</VisuallyHidden>
           </IconButton>
         </IconButtonWrapper>
       </MainHeader>
@@ -62,7 +66,6 @@ const MainHeader = styled.div`
   display: flex;
   align-items: baseline;
   padding: 18px 32px;
-  height: 72px;
   border-bottom: 1px solid hsl(var(--color-gray-300));
   overflow: auto hidden;
 

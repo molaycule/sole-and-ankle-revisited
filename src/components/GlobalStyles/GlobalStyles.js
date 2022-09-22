@@ -71,14 +71,14 @@ html {
     Silence the warning about missing Reach Dialog styles
   */
   --reach-dialog: 1;
-  --color-white: 0deg, 0%, 100%;
-  --color-gray-100: 185deg, 5%, 95%;
-  --color-gray-300: 190deg, 5%, 80%;
-  --color-gray-500: 196deg, 4%, 60%;
-  --color-gray-700: 220deg, 5%, 40%;
-  --color-gray-900: 220deg, 3%, 20%;
-  --color-primary: 340deg, 65%, 47%;
-  --color-secondary: 240deg, 60%, 63%;
+  --color-white: 0deg 0% 100%;
+  --color-gray-100: 185deg 5% 95%;
+  --color-gray-300: 190deg 5% 80%;
+  --color-gray-500: 196deg 4% 60%;
+  --color-gray-700: 220deg 5% 40%;
+  --color-gray-900: 220deg 3% 20%;
+  --color-primary: 340deg 65% 47%;
+  --color-secondary: 240deg 60% 63%;
   --font-weight-normal: 500;
   --font-weight-medium: 600;
   --font-weight-bold: 800;
